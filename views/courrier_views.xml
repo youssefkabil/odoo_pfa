@@ -1,0 +1,49 @@
+<odoo>
+    <!-- List View -->
+    <record id="view_courrier_tree" model="ir.ui.view">
+        <field name="name">courrier.tree</field>
+        <field name="model">courrier.management</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="reference"/>
+                <field name="type"/>
+                <field name="sender"/>
+                <field name="receiver"/>
+                <field name="date"/>
+                <field name="status"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_courrier_form" model="ir.ui.view">
+        <field name="name">courrier.form</field>
+        <field name="model">courrier.management</field>
+        <field name="arch" type="xml">
+            <form><sheet><group><field name="reference"/>
+                        <field name="type"/>
+                        <field name="status"/></group>
+                    <group><field name="sender"/>
+                        <field name="receiver"/>
+                        <field name="date"/></group>
+                    <group><field name="subject"/>
+                        <field name="description"/></group></sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_courrier" model="ir.actions.act_window">
+        <field name="name">Courriers</field>
+        <field name="res_model">courrier.management</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu -->
+    <menuitem id="menu_courrier_root" name="Gestion Courriers"/>
+    <menuitem
+        id="menu_courrier"
+        name="Courriers"
+        parent="menu_courrier_root"
+        action="action_courrier"/>
+</odoo>

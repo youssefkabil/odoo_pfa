@@ -1,0 +1,8 @@
+
+reference,type,sender,receiver,subject,date,status,description
+CE-2025-001,entrant,Ministère de l’Éducation,Service Administratif,Demande de rapport annuel,2025-01-05,received,Demande officielle du rapport annuel.
+CE-2025-002,entrant,Société Maroc Telecom,Direction Informatique,Facture Internet Décembre,2025-01-03,received,Facture mensuelle Internet.
+CE-2025-003,entrant,Ahmed El Mansouri,Administration Scolarité,Demande de relevé de notes,2025-01-02,draft,Demande écrite d’un relevé de notes.
+CS-2025-001,sortant,Administration Centrale,Ministère de l’Éducation,Transmission du rapport annuel,2025-01-08,sent,Envoi du rapport annuel.
+CS-2025-002,sortant,Direction Générale,Personnel Administratif,Convocation réunion interne,2025-01-10,sent,Convocation à une réunion interne.
+CS-2025-003,sortant,Service Scolarité,Ahmed El Mansouri,Relevé de notes disponible,2025-01-12,sent,Notification de disponibilité du relevé.
